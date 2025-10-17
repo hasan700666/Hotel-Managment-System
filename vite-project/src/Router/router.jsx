@@ -42,7 +42,6 @@ export const router = createBrowserRouter([
         path: "Services",
         Component: Services,
       },
-
       {
         path: "Review",
         Component: Review,
