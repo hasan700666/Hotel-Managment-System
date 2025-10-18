@@ -6,7 +6,7 @@ import food_morning from "../assets/morning food manu.gif";
 import food_day from "../assets/day food manu.gif";
 import food_night from "../assets/night food manu.gif";
 import Review2 from "./Review2";
-import { useLoaderData } from "react-router";
+import { NavLink, useLoaderData } from "react-router";
 
 const Home = () => {
   const data = useLoaderData();
@@ -41,9 +41,11 @@ const Home = () => {
           </p>
           <br />
           <br />
+          <NavLink to='SingUp'>
           <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500 text-xl font-bold">
             Book Now
           </button>
+          </NavLink>
         </div>
       </div>
 
@@ -108,9 +110,11 @@ const Home = () => {
           <div className="flex justify-between">
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
             <div className="my-10 flex gap-5">
+              <NavLink to='Rooms'>
               <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
                 More Rooms
               </button>
+              </NavLink>
             </div>
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
           </div>
@@ -488,9 +492,11 @@ const Home = () => {
               <div className="text-4xl font-bold mb-4">
                 So, What Are You Waiting For?
               </div>
+              <NavLink to="SingUp">
               <div className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
                 Book Now
               </div>
+              </NavLink>
             </div> 
           </div>
         </div>

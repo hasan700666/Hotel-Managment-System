@@ -10,6 +10,8 @@ import Services from "../Compunent/Services";
 import Review from "../Compunent/Review";
 import Find from "../Compunent/Find";
 import Contact from "../Compunent/Contact";
+import SingUp from "../Compunent/SingUp";
+import SingIn from "../Compunent/SingIn";
 
 
 
@@ -64,6 +66,14 @@ export const router = createBrowserRouter([
         path: "Contact us",
         Component: Contact,
       },
+      {
+        path: "SingUp",
+        Component: SingUp
+      },
+      {
+        path: "SingIn",
+        Component: SingIn
+      }
     ],
   },
 ]);

@@ -72,8 +72,12 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">{li}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn mx-2">Sing up</a>
-          <a className="btn mx-2">Sing in</a>
+          <NavLink to="SingUp">
+          <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">Sing up</a>
+          </NavLink>
+          <NavLink to="SingIn">
+          <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">Sing in</a>
+          </NavLink>
         </div>
       </div>
     </div>
