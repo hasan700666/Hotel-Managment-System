@@ -5,9 +5,14 @@ import food_table from "../assets/food_menu.gif";
 import food_morning from "../assets/morning food manu.gif";
 import food_day from "../assets/day food manu.gif";
 import food_night from "../assets/night food manu.gif";
-import "./Home.css";
+import Review2 from "./Review2";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
+  const data = useLoaderData();
+
+  console.log(data);
+
   return (
     <div>
       {/* hero */}
@@ -36,7 +41,7 @@ const Home = () => {
           </p>
           <br />
           <br />
-          <button className="btn bg-amber-400 text-2xl rounded-4xl p-6 font-bold text-amber-50 border border-4">
+          <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500 text-xl font-bold">
             Book Now
           </button>
         </div>
@@ -103,7 +108,7 @@ const Home = () => {
           <div className="flex justify-between">
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
             <div className="my-10 flex gap-5">
-              <button className="btn bg-amber-400 text-2xl rounded-4xl p-6 font-bold text-amber-50 border-4">
+              <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
                 More Rooms
               </button>
             </div>
@@ -143,7 +148,7 @@ const Home = () => {
                 </div>
                 <div className="">
                   <marquee behavior="" direction="">
-                    <ul className="flex gap-2 scroller__inner">
+                    <ul className="flex gap-2">
                       <img
                         src="../../public/unnamed (21).jpg"
                         alt=""
@@ -163,7 +168,7 @@ const Home = () => {
                       />
 
                       <img
-                        src="../../public/unnamed (24).jpg"
+                        src="../../public/unnamed(24).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
@@ -229,7 +234,7 @@ const Home = () => {
                       />
 
                       <img
-                        src="../../public/unnamed (35).jpg"
+                        src="../../public/unnamed(35).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
@@ -249,7 +254,7 @@ const Home = () => {
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (39).jpg"
+                        src="../../public/unnamed(39).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
@@ -334,17 +339,17 @@ const Home = () => {
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (16).jpg"
+                        src="../../public/unnamed(16).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (17).jpg"
+                        src="../../public/unnamed(17).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (18).jpg"
+                        src="../../public/unnamed(18).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
@@ -366,6 +371,130 @@ const Home = () => {
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
           </div>
         </div>
+      </div>
+      {/* Services */}
+      <div>
+        <div className="flex justify-between">
+          <div className="bg-amber-100 px-20 text-amber-100">k</div>
+          <div className="my-10 flex gap-5 w-full">
+            <div className="w-full">
+              <div className="text-8xl text-amber-400 bg-white rounded-4xl px-7 font-bold text-center my-15">
+                Our Services
+              </div>
+              <div className="grid ">
+                <div className="grid grid-cols-3 gap-2">
+                  <div className="bg-[url('/unnamed(39).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      আম বাগান ও অন্যান্য
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      আশেপাশে প্রচুর আম বাগান, আমাদের ত আছেই । সারাদিন বাগানেই
+                      থাকা যাবে, রান্নাও করা যাবে । চাইলে আম গাছের যত্ন, আম
+                      বাগান নিয়ে ধারনা নিতে পারবেন। এছাড়া আমাদের কফি বাগান,
+                      ড্রাগন বাগান আখের খেত রয়েছে ।{" "}
+                    </p>
+                  </div>
+
+                  <div className="bg-[url('/unnamed(35).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      গরু, ৪০০/৫০০ গরু
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      এক সাথে সর্বোচ্চ কত গরু দেখেছেন ? এই এলাকার মাঠে এক সাথে
+                      হাজার গরুও চড়ে বেড়ায় । গলায় দড়ি না থাকা এইসব গরু যখন লেজ
+                      তুলে দৌড় দেয় সে এক দেখার মত দৃশ্য বটে ।
+                    </p>
+                  </div>
+
+                  <div className="bg-[url('/unnamed(24).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      শান্ত স্নিগ্ধ গ্রাম
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      এদিকের মাটির বাড়ির ঐতিহ্য, সাথে ৯০ দশকের শান্ত গ্রাম এই
+                      এলাকাকে করেছে অদ্বিতীয় । বিল, পাহাড়ী টিলা মত ঢেউ খেলানো
+                      ফসলের মাঠ আর ফল বাগানের সবুজ= চোখ জুড়িয়ে দেয়ার মত বিষয় ।
+                    </p>
+                  </div>
+                  <div className="bg-[url('/unnamed(16).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      গ্রামের হাট
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      গ্রামের হাটে, গরম ভাতের সাথে হাসের মাংস দুর্দান্ত মজার ।
+                      সাথে শনিবারের এই হাটে, মাটির পাতিলের দোকান, গরু, ছাগল, হাস
+                      মুরগি সহ সবকিছুই পাওয়া যায় ।
+                    </p>
+                  </div>
+                  <div className="bg-[url('/unnamed(18).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      বিল, হাওরের মতই সুন্দর
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      এখানে কয়েক কিলোমিটার ব্যাপি বিস্তৃত বিল দারুন সুন্দর ।
+                      সাথে আছে নৌকায় চড়ে বেড়ানর সুবিধা, হরেক রকম পাখি,
+                      মাছরাঙ্গা, অতিথি পাখি সহ কালো আর সাদা বক আর অগুনতি ঘুঘু এই
+                      এলাকাকে করেছে অনন্য ।
+                    </p>
+                  </div>
+                  <div className="bg-[url('/unnamed(17).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                    <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      প্রজেক্ট বর্গা
+                    </p>
+                    <p className=" font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
+                      আমাদের প্রজেক্ট বর্গার গরুর সাথে সময় কাটাতে চান ? অথবা
+                      আমাদের বাগানের টুকটাক কাজ – সময় ত এভাবেই বই পড়তে আর ঘুমিয়ে
+                      আর বেড়িয়ে চলে যাবে !{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-amber-100 px-20 text-amber-100">k</div>
+        </div>
+      </div>
+      {/* comment */}
+      <div className="flex justify-between">
+        <div className="bg-amber-100 px-20 text-amber-100">k</div>
+        <div className="">
+          <div className="text-8xl text-amber-400 bg-white rounded-4xl font-bold text-center my-10 ">
+            Costomer Review
+          </div>
+          <div>
+            <marquee behavior="" direction="">
+              <div className="flex gap-5">
+                {data.map((data) => (
+                  <Review2 data={data}></Review2>
+                ))}
+              </div>
+            </marquee>
+          </div>
+        </div>
+        <div className="bg-amber-100 px-20 text-amber-100">k</div>
+      </div>
+      <div className="flex justify-between">
+        <div className="bg-amber-100 px-20 text-amber-100">k</div>
+        <div className="my-10 flex gap-5">
+          <div>
+            {/* about */}
+            <div></div>
+            {/* find */}
+            <div></div>
+            {/* contact */}
+            <div></div>
+            {/* book */}
+            <div className="text-center my-10">
+              <div className="text-4xl font-bold mb-4">
+                So, What Are You Waiting For?
+              </div>
+              <div className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
+                Book Now
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div className="bg-amber-100 px-20 text-amber-100">k</div>
       </div>
     </div>
   );

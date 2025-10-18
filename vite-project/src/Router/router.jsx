@@ -11,6 +11,15 @@ import Review from "../Compunent/Review";
 import Find from "../Compunent/Find";
 import Contact from "../Compunent/Contact";
 
+
+
+ async function DataLoding() {
+  const res = await fetch('/comments.json')
+  const data = await res.json()
+  return data.reviews
+}
+
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +28,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: DataLoding,
         path: "/",
         Component: Home,
       },
