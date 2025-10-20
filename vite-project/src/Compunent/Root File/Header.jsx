@@ -59,7 +59,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow forCss"
             >
               {li}
             </ul>
@@ -69,7 +69,7 @@ const Header = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{li}</ul>
+          <ul className="menu menu-horizontal px-1 forCss">{li}</ul>
         </div>
         <div className="navbar-end">
           <NavLink to="SingUp">
