@@ -19,7 +19,7 @@ const Home = () => {
       <div className="relative w-full h-[100vh] overflow-hidden">
         {/* Background video */}
         <video
-          src="https://www.freshie.farm/wp-content/uploads/2023/08/367492838_1498414510968164_1604475483158287395_n.mp4"
+          src="/367492838_1498414510968164_1604475483158287395_n.mp4"
           className="absolute top-0 left-0 w-full object-cover"
           autoPlay
           muted
@@ -41,10 +41,10 @@ const Home = () => {
           </p>
           <br />
           <br />
-          <NavLink to='SingUp'>
-          <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500 text-xl font-bold">
-            Book Now
-          </button>
+          <NavLink to="SingUp">
+            <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500 text-xl font-bold">
+              Book Now
+            </button>
           </NavLink>
         </div>
       </div>
@@ -110,10 +110,10 @@ const Home = () => {
           <div className="flex justify-between">
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
             <div className="my-10 flex gap-5">
-              <NavLink to='Rooms'>
-              <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
-                More Rooms
-              </button>
+              <NavLink to="Rooms">
+                <button className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
+                  More Rooms
+                </button>
               </NavLink>
             </div>
             <div className="bg-amber-100 px-20 text-amber-100">k</div>
@@ -154,216 +154,243 @@ const Home = () => {
                   <marquee behavior="" direction="">
                     <ul className="flex gap-2">
                       <img
-                        src="../../public/unnamed (21).jpg"
+                        src="/unnamed (21).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (22).jpg"
+                        src="/unnamed (22).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (23).jpg"
+                        src="/unnamed (23).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed(24).jpg"
+                        src="/unnamed-24.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (25).jpg"
+                        src="/unnamed (25).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (26).jpg"
+                        src="/unnamed (26).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (27).jpg"
+                        src="
+                        /unnamed (27).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (28).jpg"
+                        src="/unnamed (28).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (29).jpg"
+                        src="/unnamed (29).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (30).jpg"
+                        src="/unnamed (30).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (31).jpg"
+                        src="/unnamed (31).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (32).jpg"
+                        src="/unnamed (32).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (33).jpg"
+                        src="/unnamed (33).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed (34).jpg"
+                        src="
+                        /unnamed (34).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
 
                       <img
-                        src="../../public/unnamed(35).jpg"
+                        src="
+                        /unnamed-35.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (36).jpg"
+                        src="
+                        /unnamed (36).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (37).jpg"
+                        src="
+                        /unnamed (37).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (38).jpg"
+                        src="
+                        /unnamed (38).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed(39).jpg"
+                        src="
+                        /unnamed-39.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (40).jpg"
+                        src="
+                        /unnamed (40).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (1).jpg"
+                        src="
+                        /unnamed (1).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (2).jpg"
+                        src="
+                        /unnamed (2).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (3).jpg"
+                        src="
+                        /unnamed (3).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (4).jpg"
+                        src="
+                        /unnamed (4).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (5).jpg"
+                        src="
+                        /unnamed (5).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (6).jpg"
+                        src="
+                        /unnamed (6).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (7).jpg"
+                        src="
+                        /unnamed (7).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (8).jpg"
+                        src="
+                        /unnamed (8).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (9).jpg"
+                        src="
+                        /unnamed (9).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (10).jpg"
+                        src="
+                        /unnamed (10).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (11).jpg"
+                        src="
+                        /unnamed (11).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (12).jpg"
+                        src="
+                        /unnamed (12).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (13).jpg"
+                        src="
+                        /unnamed (13).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (14).jpg"
+                        src="
+                        /unnamed (14).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (15).jpg"
+                        src="
+                        /unnamed (15).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed(16).jpg"
+                        src="
+                        /unnamed-16.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed(17).jpg"
+                        src="
+                        /unnamed-17.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed(18).jpg"
+                        src="
+                        /unnamed-18.jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (19).jpg"
+                        src="
+                        /unnamed (19).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
                       <img
-                        src="../../public/unnamed (20).jpg"
+                        src="/unnamed (20).jpg"
                         alt=""
                         className="h-60 w-80 object-cover rounded-xl flex-shrink-0"
                       />
@@ -387,7 +414,7 @@ const Home = () => {
               </div>
               <div className="grid ">
                 <div className="grid grid-cols-3 gap-2">
-                  <div className="bg-[url('/unnamed(39).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                  <div className="bg-[url('/unnamed-39.jpg')] bg-no-repeat bg-cover rounded-xl ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       আম বাগান ও অন্যান্য
                     </p>
@@ -399,7 +426,7 @@ const Home = () => {
                     </p>
                   </div>
 
-                  <div className="bg-[url('/unnamed(35).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                  <div className="bg-[url('/unnamed-35.jpg')] bg-no-repeat bg-cover rounded-xl  ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       গরু, ৪০০/৫০০ গরু
                     </p>
@@ -410,7 +437,7 @@ const Home = () => {
                     </p>
                   </div>
 
-                  <div className="bg-[url('/unnamed(24).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                  <div className="bg-[url('/unnamed-24.jpg')] bg-no-repeat bg-cover rounded-xl ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       শান্ত স্নিগ্ধ গ্রাম
                     </p>
@@ -420,7 +447,7 @@ const Home = () => {
                       ফসলের মাঠ আর ফল বাগানের সবুজ= চোখ জুড়িয়ে দেয়ার মত বিষয় ।
                     </p>
                   </div>
-                  <div className="bg-[url('/unnamed(16).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                  <div className="bg-[url('/unnamed-16.jpg')] bg-no-repeat bg-cover rounded-xl  ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       গ্রামের হাট
                     </p>
@@ -430,7 +457,7 @@ const Home = () => {
                       মুরগি সহ সবকিছুই পাওয়া যায় ।
                     </p>
                   </div>
-                  <div className="bg-[url('/unnamed(18).jpg')] bg-no-repeat bg-cover rounded-xl ">
+                  <div className="bg-[url('/unnamed-18.jpg')] bg-no-repeat bg-cover rounded-xl ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       বিল, হাওরের মতই সুন্দর
                     </p>
@@ -441,7 +468,7 @@ const Home = () => {
                       এলাকাকে করেছে অনন্য ।
                     </p>
                   </div>
-                  <div className="bg-[url('/unnamed(17).jpg')] bg-no-repeat bg-cover rounded-xl  ">
+                  <div className="bg-[url('/unnamed-17.jpg')] bg-no-repeat bg-cover rounded-xl  ">
                     <p className="text-3xl font-bold text-center m-5 bg-amber-400 rounded-4xl p-1 text-white">
                       প্রজেক্ট বর্গা
                     </p>
@@ -493,11 +520,11 @@ const Home = () => {
                 So, What Are You Waiting For?
               </div>
               <NavLink to="SingUp">
-              <div className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
-                Book Now
-              </div>
+                <div className="btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
+                  Book Now
+                </div>
               </NavLink>
-            </div> 
+            </div>
           </div>
         </div>
         <div className="bg-amber-100 px-20 text-amber-100">k</div>
