@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {
-  createUserWithEmailAndPassword,
+  //createUserWithEmailAndPassword,
   GithubAuthProvider,
   GoogleAuthProvider,
   signInWithPopup,
@@ -11,11 +11,16 @@ import { auth } from "../Firebase/init";
 import { FaEyeSlash, FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { NavLink } from "react-router";
+import { AuthContext } from "../context/AuthContext/AuthContext";
+
 
 const GoogleProvider = new GoogleAuthProvider();
 const GithubProvider = new GithubAuthProvider();
 
 const SingUp = () => {
+
+  const { createUser } = use(AuthContext);
+
   const [user, SetUser] = useState(null);
   const [sucess, SetSucess] = useState(false);
   const [error, SetError] = useState("");
@@ -95,7 +100,8 @@ const SingUp = () => {
       return;
     }
 
-    createUserWithEmailAndPassword(auth, email, password)
+
+     createUser(email, password)
       .then((result) => {
         console.log(result);
         SetSucess(true);
@@ -104,6 +110,16 @@ const SingUp = () => {
         console.log(e);
         SetError("this Email is allraddy bind usd");
       });
+
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then((result) => {
+    //     console.log(result);
+    //     SetSucess(true);
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //     SetError("this Email is allraddy bind usd");
+    //   });
   };
 
   const hendleShowPassword = () => {

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { use } from "react";
 import logo from "../../../public/kureghar.png";
 import { NavLink } from "react-router";
+import { AuthContext } from "../../context/AuthContext/AuthContext";
 
 const Header = () => {
   const li = (
@@ -34,6 +35,15 @@ const Header = () => {
       </NavLink>
     </>
   );
+
+  const { user,singOut } = use(AuthContext);
+
+  console.log(user);
+
+  const hendleSingOut=()=>{
+    singOut()
+    
+  }
 
   return (
     <div>
@@ -72,12 +82,22 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1 forCss">{li}</ul>
         </div>
         <div className="navbar-end">
-          <NavLink to="SingUp">
-          <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">Sing up</a>
-          </NavLink>
-          <NavLink to="SingIn">
-          <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">Sing in</a>
-          </NavLink>
+          {user ? (
+            <button className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500" onClick={hendleSingOut}>Sing Out</button>
+          ) : (
+            <>
+              <NavLink to="SingUp">
+                <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
+                  Sing up
+                </a>
+              </NavLink>
+              <NavLink to="SingIn">
+                <a className=" mx-2 btn bg-amber-400 text-white px-6 py-2 rounded-xl hover:bg-amber-500">
+                  Sing in
+                </a>
+              </NavLink>
+            </>
+          )}
         </div>
       </div>
     </div>

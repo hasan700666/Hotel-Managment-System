@@ -1,4 +1,4 @@
-import React from "react";
+//import React, { use } from "react";
 import single from "../assets/single Room-Picsart-AiImageEnhancer.jpg";
 import double from "../assets/family Room-Picsart-AiImageEnhancer.jpg";
 import food_table from "../assets/food_menu.gif";
@@ -7,6 +7,7 @@ import food_day from "../assets/day food manu.gif";
 import food_night from "../assets/night food manu.gif";
 import Review2 from "./Review2";
 import { NavLink, useLoaderData } from "react-router";
+
 
 const Home = () => {
   const data = useLoaderData();

@@ -12,6 +12,7 @@ import Find from "../Compunent/Find";
 import Contact from "../Compunent/Contact";
 import SingUp from "../Compunent/SingUp";
 import SingIn from "../Compunent/SingIn";
+import ProvaterRouter from "./ProvaterRouter";
 
 
 
@@ -44,7 +45,9 @@ export const router = createBrowserRouter([
       },
       {
         path: "Foods",
-        Component: Foods,
+        element:<ProvaterRouter>
+          <Foods></Foods>
+        </ProvaterRouter>,
       },
       {
         path: "Gallery",

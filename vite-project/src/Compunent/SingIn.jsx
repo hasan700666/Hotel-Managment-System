@@ -1,8 +1,20 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
-import { auth } from "../Firebase/init";
+//import { signInWithEmailAndPassword } from "firebase/auth";
+import React, {  use, useState } from "react";
+//import { auth } from "../Firebase/init";
+import { AuthContext } from "../context/AuthContext/AuthContext";
+import { useLocation, useNavigate } from "react-router";
+
 
 const SingIn = () => {
+
+  const location = useLocation()
+  const nevegate = useNavigate()
+  console.log(location);
+  
+  
+  const {sinInUser} = use(AuthContext);
+  
+
   const [error, SetError] = useState("");
   const [success, SetSuccess] = useState("");
 
@@ -16,16 +28,32 @@ const SingIn = () => {
     SetError("");
     SetSuccess("");
 
-    signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
+   
+    sinInUser(email,password)
+    .then((result) => {
         console.log(result.user);
         SetSuccess("account is created");
+        nevegate(location.state || "/")
       })
       .catch((e) => {
         console.log(e.message);
         SetError("Error")
       });
+
+
+    // signInWithEmailAndPassword(auth, email, password)
+    //   .then((result) => {
+    //     console.log(result.user);
+    //     SetSuccess("account is created");
+    //   })
+    //   .catch((e) => {
+    //     console.log(e.message);
+    //     SetError("Error")
+    //   });
   };
+
+
+  
 
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -62,12 +90,8 @@ const SingIn = () => {
                 <button className="btn btn-neutral mt-4">Login</button>
               </fieldset>
             </form>
-            {
-              error && <p>{error}</p>
-            }
-            {
-              success && <p>{success}</p>
-            }
+            {error && <p>{error}</p>}
+            {success && <p>{success}</p>}
           </div>
         </div>
       </div>
